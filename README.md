@@ -2,24 +2,52 @@
 
 ## Overview
 
-This **Multi-Language OCR and Keyword Search** application is built using **Streamlit**, **EasyOCR**, and **PIL** to allow users to extract text from images containing both **Hindi** and **English** languages. After extracting the text, users can search for specific keywords within the extracted text and download the results in **JSON** or **TXT** format.
+The **Multi-Language OCR and Keyword Search** application harnesses the power of **Streamlit**, **EasyOCR**, and **PIL** to extract text from images in **Hindi** and **English**. It provides an intuitive interface where users can upload images, perform OCR, search for keywords, and download the results in **JSON** or **TXT** format. This tool is perfect for extracting multilingual content from scanned documents, signs, and more.
 
-## Features
+---
 
-- **Multi-language OCR**: Extracts text from images containing both Hindi and English using the EasyOCR library.
-- **Keyword Highlighting**: Search for specific keywords within the extracted text, with the matches highlighted for easy identification.
-- **Download Options**: Allows users to download the extracted text in **JSON** or **TXT** formats.
-- **Streamlit UI**: A simple and interactive user interface for uploading images and interacting with the text extraction process.
+## 🔥 Key Features
 
-## Setup Instructions
+- **Multi-language OCR**: Seamlessly extract text in Hindi and English.
+- **Keyword Search & Highlighting**: Easily search for keywords within the extracted text with visual highlights for better clarity.
+- **Download Extracted Text**: Get your results in either **JSON** or **TXT** format, making it versatile for different use cases.
+- **Interactive & Responsive UI**: A smooth experience using Streamlit for quick, real-time feedback on OCR results.
+- **File Format Flexibility**: Supports PNG, JPG, and JPEG image formats for text extraction.
+- **Fast Processing**: Leverages EasyOCR for fast and accurate text recognition, even in complex image setups.
+  
+---
+
+## 🌐 Live Demo
+
+Try out the live demo on Hugging Face Spaces:  
+[**OcRecog**](https://huggingface.co/spaces/Ushnish2004/OcRecog)
+
+---
+
+## 💡 Future Updates
+
+- **Support for Additional Languages**: Expanding OCR to recognize more languages.
+- **Advanced Text Editing**: Introducing a text editor for modifying extracted text before downloading.
+- **Improved Accuracy**: Enhancing keyword search functionality for more precise results.
+
+---
+
+## 🚀 How to Deploy on Hugging Face
+
+1. **Push to GitHub**: Make sure your code is available in a public GitHub repository.
+2. **Create a Hugging Face Space**: Choose "Streamlit" as the SDK and link your repository.
+3. **Build & Deploy**: After setting up, your app will be live at the provided public URL.
+
+---
+
+## 🛠️ Setup Instructions
 
 ### Prerequisites
 
-Ensure you have the following installed:
-- Python 3.7 or higher
-- pip (Python package installer)
+- **Python** 3.7+
+- **pip** for package management
 
-### Setting Up the Environment
+### Installation Steps
 
 1. **Clone the Repository**
    ```bash
@@ -27,63 +55,34 @@ Ensure you have the following installed:
    cd your-repo-name
    ```
 
-2. **Create a Virtual Environment** (optional but recommended)
+2. **Set up a Virtual Environment**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   source venv/bin/activate  # For Windows: venv\Scripts\activate
    ```
 
-3. **Install Required Packages**
+3. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-   Ensure that `requirements.txt` contains the following libraries:
-   ```
-   streamlit
-   easyocr
-   pillow
-   numpy
-   ```
-   
-### Running the Web Application Locally
-
-1. **Start the Streamlit Application**
+4. **Run the Application**
    ```bash
    streamlit run app.py
    ```
 
-   Replace `app.py` with the name of your Python file if it's different.
+---
 
-2. **Open in Browser**
-   After running the command, Streamlit will provide a local URL (usually `http://localhost:8501`). Open this URL in your web browser to access the application.
+## 🔧 Customization
 
-## Deployment Process
+Want to customize the app? Here's what you can modify:
 
-You can deploy the application using various platforms such as **Streamlit Sharing**, **Heroku**, or **AWS**. Below are brief instructions for deploying on Streamlit Sharing.
+- **Languages Supported**: Modify the `easyocr.Reader` to include more languages.
+- **UI Elements**: Use Streamlit's widgets to enhance user interaction, such as sliders, checkboxes, etc.
+- **Additional Features**: Add custom functionalities, like extracting specific text regions or applying advanced image preprocessing.
 
-### Deploying on Streamlit Sharing
+---
 
-1. **Push to GitHub**
-   Make sure your code is pushed to a public GitHub repository.
+## 📞 Contact & Support
 
-2. **Sign Up for Streamlit Sharing**
-   Go to [Streamlit Sharing](https://share.streamlit.io/) and sign up with your GitHub account.
-
-3. **Deploy the Application**
-   - Click on "New app".
-   - Select the repository and branch where your application is stored.
-   - Enter the path to your main Python file (e.g., `app.py`).
-   - Click "Deploy".
-
-4. **Access the Deployed Application**
-   After deployment, you’ll receive a public URL where your application is accessible.
-
-### Notes for Deployment
-
-- Ensure that your `requirements.txt` is up to date with all necessary packages.
-- If using external APIs or databases, ensure your application can access them securely in the production environment.
-
-## Conclusion
-
-This application allows users to efficiently extract and search for text in images across multiple languages. Feel free to modify and enhance the application as needed. For any issues or feature requests, please open an issue on the GitHub repository.
+Feel free to reach out for any questions, feature requests, or bug reports. Open an issue on the [GitHub repository](https://github.com/UshnishG/IITR-OCR) for prompt support.
