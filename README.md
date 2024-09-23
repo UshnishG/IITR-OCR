@@ -1,4 +1,4 @@
-# Multi-Language OCR and Keyword Search Application
+# OcRecog -> Multi-Language OCR and Keyword Search Application
 
 ## Overview
 
